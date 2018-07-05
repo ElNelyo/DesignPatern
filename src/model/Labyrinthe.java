@@ -8,28 +8,19 @@ public class Labyrinthe {
 	private int largeur;
 	private Case[][] casesLaby;
 	
-	public Labyrinthe(int _hauteur, int _largeur)
+	public Labyrinthe(int _hauteur, int _largeur, Case[][] _caselaby)
 	{
 		this.hauteur = _hauteur;
 		this.largeur = _largeur;
-		this.casesLaby = new Case[hauteur][largeur];
+		this.casesLaby = _caselaby;
 	}
 
 	
 	
-	public void niveau_test(){
-		Case[][] tabCases = new Case[][] {
-			{new Mur(),new Mur(),new Mur(),new Mur(),new Mur(),new Mur(),new Mur(),new Mur(),new Mur()},
-			{new Mur(),new Case_Vide(),new Case_Vide(),new Case_Vide(),new Case_Vide(),new Case_Vide(),new Case_Vide(),new Case_Vide(),new Mur()},
-			{new Mur(),new Case_Vide(),new Case_Vide(),new Case_Vide(),new Case_Vide(),new Case_Vide(),new Case_Vide(),new Case_Vide(),new Mur()},
-			{new Mur(),new Case_Vide(),new Case_Vide(),new Case_Vide(),new Case_Vide(),new Case_Vide(),new Case_Vide(),new Case_Vide(),new Mur()},
-			{new Mur(),new Case_Vide(),new Case_Vide(),new Case_Vide(),new Case_Vide(),new Case_Vide(),new Case_Vide(),new Case_Vide(),new Mur()},
-			{new Mur(),new Case_Vide(),new Case_Vide(),new Case_Vide(),new Case_Vide(),new Case_Vide(),new Case_Vide(),new Case_Vide(),new Mur()},
-			{new Mur(),new Case_Vide(),new Case_Vide(),new Case_Vide(),new Case_Vide(),new Case_Vide(),new Case_Vide(),new Case_Vide(),new Mur()},
-			{new Mur(),new Case_Vide(),new Case_Vide(),new Case_Vide(),new Case_Vide(),new Case_Vide(),new Case_Vide(),new Case_Vide(),new Mur()},
-			{new Mur(),new Mur(),new Mur(),new Mur(),new Mur(),new Mur(),new Mur(),new Mur(),new Mur()}	};			 
-			setCasesLaby(tabCases);
-	}
+	
+				 
+	
+	
 
 
 	public int getHauteur() {
