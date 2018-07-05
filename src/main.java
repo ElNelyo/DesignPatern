@@ -12,6 +12,7 @@ public class main {
 		if(jeu==null){
 			jeu = new Jeu();
 			jeu.start();
+			
 		}
 		
 	}

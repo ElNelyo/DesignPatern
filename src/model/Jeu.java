@@ -3,17 +3,17 @@ import java.util.Scanner;
 
 
 public class Jeu { 
+ private Niveau[] niveaux;
  
+ 
+public void Jeu(Niveau[] niveaux){
+	this.niveaux = niveaux;
+}
 public void start(){ 
-	/* Scanner reader = new Scanner(System.in);
-	System.out.println("Entrer votre nom");
-	String name = reader.next(); 
-	System.out.println("Nom choisi : "+name);
-	*/
-	
 	Labyrinthe labyrinthe = new Labyrinthe(9,9);
-	Niveau niveau = new Niveau();
-	niveau.niveau_test();
+	labyrinthe.niveau_test();
+	System.out.println(labyrinthe.getCasesLaby());
+	
 	
 	// List de niveau , 
 	// Matrice du labyrinthe : case d'entr�e de sortie 
