@@ -6,7 +6,7 @@ public class Jeu {
  private Niveau[] niveaux;
  
  
-public void Jeu(Niveau[] niveaux){
+public Jeu(Niveau[] niveaux){
 	this.niveaux = niveaux;
 }
 public void start(){ 
