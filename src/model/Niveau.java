@@ -12,7 +12,7 @@ public class Niveau {
 		difficulte = diff;
 		return diff;
 	}
-	public void niveau_test(){
-		
+	public void niveau_test(){	
+				
 	}
 }
