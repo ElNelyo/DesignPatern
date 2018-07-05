@@ -1,3 +1,4 @@
+package model;
 public class Niveau {
 	
 	private int difficulte = 0;
