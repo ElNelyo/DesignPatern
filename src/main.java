@@ -1,4 +1,4 @@
-import model.Jeu;
+import model.impl.Jeu;
 
 public class main {
 	

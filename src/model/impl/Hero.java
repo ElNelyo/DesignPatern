@@ -1,4 +1,6 @@
-package model;
+package model.impl;
+
+import model.Personnage;
 
 public class Hero implements Personnage {
 
