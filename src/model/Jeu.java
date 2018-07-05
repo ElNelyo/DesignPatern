@@ -12,7 +12,7 @@ public Jeu(Niveau[] niveaux){
 public void start(){ 
 	
 	// List de niveau , 
-	// Matrice du labyrinthe : case d'entrï¿½e de sortie 
+	// Matrice du labyrinthe : case d'entrée de sortie 
 	// Case recoit le niveau
 	
 } 

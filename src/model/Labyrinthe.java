@@ -7,12 +7,15 @@ public class Labyrinthe {
 	private int hauteur;
 	private int largeur;
 	private Case[][] casesLaby;
-	
-	public Labyrinthe(int _hauteur, int _largeur, Case[][] _caselaby)
+	private Case case_depart;
+	private Case case_fin;
+	public Labyrinthe(int _hauteur, int _largeur, Case[][] _caselaby, Case _case_depart,Case _case_fin)
 	{
 		this.hauteur = _hauteur;
 		this.largeur = _largeur;
 		this.casesLaby = _caselaby;
+		this.case_depart = _case_depart;
+		this.case_fin = _case_fin;
 	}
 
 	

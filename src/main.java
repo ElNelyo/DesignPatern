@@ -3,6 +3,7 @@ import model.Case_Vide;
 import model.Jeu;
 import model.Labyrinthe;
 import model.Mur;
+import model.Niveau;
 
 public class main {
 	
@@ -24,13 +25,18 @@ public class main {
 				{new Mur(),new Case_Vide(),new Case_Vide(),new Case_Vide(),new Case_Vide(),new Case_Vide(),new Case_Vide(),new Case_Vide(),new Mur()},
 				{new Mur(),new Case_Vide(),new Case_Vide(),new Case_Vide(),new Case_Vide(),new Case_Vide(),new Case_Vide(),new Case_Vide(),new Mur()},
 				{new Mur(),new Case_Vide(),new Case_Vide(),new Case_Vide(),new Case_Vide(),new Case_Vide(),new Case_Vide(),new Case_Vide(),new Mur()},
-				{new Mur(),new Mur(),new Mur(),new Mur(),new Mur(),new Mur(),new Mur(),new Mur(),new Mur()}	};		
-		     	Labyrinthe labyrinthe = new Labyrinthe(9,9,tabCases);
-			
-		     	jeu = new Jeu();		 
+				{new Mur(),new Mur(),new Mur(),new Mur(),new Mur(),new Mur(),new Mur(),new Mur(),new Mur()}	
+					};	
+				
+		     	Labyrinthe labyrinthe = new Labyrinthe(9,9,tabCases,tabCases[1][1],tabCases[5][7]);
+		     	Niveau[] niveau = {new Niveau(0)};
+		     	jeu = new Jeu(niveau);		 
 		     	jeu.start();
-			
-		     	System.out.println(labyrinthe.getCasesLaby());
+		     	for(Case caselab[] : labyrinthe.getCasesLaby()){
+		     		for(Case caserow : caselab){
+		     			System.out.println(caserow);
+		     		}
+		     	}
 			
 		}
 		
