@@ -16,7 +16,7 @@ public void start(){
 	niveau.niveau_test();
 	
 	// List de niveau , 
-	// Matrice du labyrinthe : case d'entrée de sortie 
+	// Matrice du labyrinthe : case d'entrï¿½e de sortie 
 	// Case recoit le niveau
 	
 } 
