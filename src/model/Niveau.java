@@ -1,4 +1,5 @@
 package model;
+
 public class Niveau {
 	
 	private int difficulte = 0;
@@ -10,5 +11,8 @@ public class Niveau {
 	public int setDifficulte(int diff) {
 		difficulte = diff;
 		return diff;
+	}
+	public void niveau_test(){
+		
 	}
 }
