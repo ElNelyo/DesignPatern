@@ -25,16 +25,12 @@ public class main {
 				{new Mur(),new Case_Vide(),new Case_Vide(),new Case_Vide(),new Case_Vide(),new Case_Vide(),new Case_Vide(),new Case_Vide(),new Mur()},
 				{new Mur(),new Case_Vide(),new Case_Vide(),new Case_Vide(),new Case_Vide(),new Case_Vide(),new Case_Vide(),new Case_Vide(),new Mur()},
 				{new Mur(),new Mur(),new Mur(),new Mur(),new Mur(),new Mur(),new Mur(),new Mur(),new Mur()}	};		
-			Labyrinthe labyrinthe = new Labyrinthe(9,9,tabCases);
+		     	Labyrinthe labyrinthe = new Labyrinthe(9,9,tabCases);
 			
+		     	jeu = new Jeu();		 
+		     	jeu.start();
 			
-			
-			
-			
-			jeu = new Jeu();		 
-			jeu.start();
-			
-			System.out.println(labyrinthe.getCasesLaby());
+		     	System.out.println(labyrinthe.getCasesLaby());
 			
 		}
 		
