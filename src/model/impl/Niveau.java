@@ -1,4 +1,4 @@
-package model;
+package model.impl;
 public class Niveau {
 	
 	private int difficulte = 0;

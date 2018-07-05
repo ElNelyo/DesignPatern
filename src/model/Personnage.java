@@ -1,14 +1,26 @@
 package model;
 
+import java.util.List;
+
 /**
  * @author Guillaume
  *
  */
 public interface Personnage {
 	
-	void deplacer();
+	/**
+	 * @return the nom
+	 */
+	public String getNom();
 	
-	void mourir();
+	/**
+	 * @return the vie
+	 */
+	public int getVie();
 	
+	/**
+	 * @return the objets
+	 */
+	public List<Objet> getObjets();
 	
 }
