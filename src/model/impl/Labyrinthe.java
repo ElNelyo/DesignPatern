@@ -1,4 +1,4 @@
-package model;
+package model.impl;
 import java.util.ArrayList;
 
 public class Labyrinthe {
