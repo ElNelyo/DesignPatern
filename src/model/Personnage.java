@@ -5,7 +5,7 @@ package model;
  *
  */
 public interface Personnage {
-	
+
 	void deplacer();
 	
 	void mourir();
