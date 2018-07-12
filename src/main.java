@@ -30,17 +30,17 @@ public class main {
 
 		     	jeu = new Jeu(niveau);		 
 		     	jeu.start();
-
-		     	for(Case caselab[] : labyrinthe.getCasesLaby()){
-		     		for(Case caserow : caselab){
-		     			System.out.println(caserow);
-		     		}
+		     	jeu.generer_labyrinthe(tabCases, labyrinthe);
+		     	jeu.placer_joueur(labyrinthe);
+		     	System.out.println("Joueur crée avec "+joueur.getVie()+"pts de vie et "+joueur.getArmure()+"pts d'armure");
+		     	
+		     	while (1==1){
+		     		jeu.deplacer();	
 		     	}
-
-		     	System.out.println("Joueur crÃ©e avec "+joueur.getVie()+"pts de vie et "+joueur.getArmure()+"pts d'armure");
-
-		     	if(IsKeyPressed.isWPressed()) {)
-		     	jeu.keyPressed();
+		     	
+		     	
+		     	
+		     	
 
 
 		}

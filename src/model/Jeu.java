@@ -1,56 +1,86 @@
 package model;
+
 import java.awt.event.KeyEvent;
 import java.util.Scanner;
 
+public class Jeu {
+	private Niveau[] niveaux;
 
-public class Jeu { 
- private Niveau[] niveaux;
- 
- 
-public Jeu(Niveau[] niveaux){
-	this.niveaux = niveaux;
+	public Jeu(Niveau[] niveaux) {
+		this.niveaux = niveaux;
+	}
+
+	public void start() {
+
+		// List de niveau ,
+		// Matrice du labyrinthe : case d'entrée de sortie
+		// Case recoit le niveau
+
+	}
+
+	public void stop() {
+
+	}
+
+	public void endLevel() {
+
+	}
+
+	public void listNiveaux() {
+
+	}
+
+	public void deplacer() {
+		Scanner sc = new Scanner(System.in);
+		String str = sc.nextLine();
+		switch (str) {
+		case "z":
+			System.out.println("Deplacement vers le haut");
+			break;
+		case "q":
+			System.out.println("Deplacement vers la gauche");
+			break;
+		case "d":
+			System.out.println("Deplacement vers le droite");
+			break;
+		case "s":
+			System.out.println("Deplacement vers le bas");
+			break;
+
+		default:
+			System.out.println("Mauvaise touche (Z,Q,S,D)");
+			break;
+		}
+
+	}
+	public void placer_joueur(Labyrinthe labyrinthe, Personnage perso){
+		labyrinthe.getCase_depart().
+		
+		
+	}
+	public void generer_labyrinthe(Case[][] tabCases, Labyrinthe labyrinthe) {
+
+		int count = 1;
+		for (Case caselab[] : labyrinthe.getCasesLaby()) {
+			for (Case caserow : caselab) {
+				if (count < 9) {
+
+					if (caserow instanceof Case_Vide) {
+						System.out.print("[ ]");
+						count++;
+					} else {
+						System.out.print("[X]");
+						count++;
+					}
+
+				} else {
+					System.out.println("[X]");
+					count = 1;
+
+				}
+
+			}
+
+		}
+	}
 }
-public void start(){ 
-	
-	// List de niveau , 
-	// Matrice du labyrinthe : case d'entrée de sortie
-	// Case recoit le niveau
-	
-} 
- 
-public void stop(){ 
-   
-} 
- 
-public void endLevel(){ 
-   
-} 
- 
-public void listNiveaux(){ 
-   
-}
-
-    public void keyPressed(KeyEvent e) {
-
-        int key = e.getKeyCode();
-
-        if (key == KeyEvent.VK_LEFT) {
-            System.out.println("Gauche");
-        }
-
-        if (key == KeyEvent.VK_RIGHT) {
-            System.out.println("Droite");
-        }
-
-        if (key == KeyEvent.VK_UP) {
-            System.out.println("Haut");
-        }
-
-        if (key == KeyEvent.VK_DOWN) {
-            System.out.println("Bas");
-        }
-    }
-
-
-   
-} 
