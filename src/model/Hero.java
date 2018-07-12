@@ -7,8 +7,10 @@ public class Hero implements Personnage {
 	private int vie;
 	private int armure;
 	private final List<HeroObserver> observateurs = new ArrayList<>();
+	private Case caseHero;
 	
 	 
+	
 	
 	public void addObservateur(HeroObserver observateur){
 		this.observateurs.add(observateur);
@@ -26,9 +28,10 @@ public class Hero implements Personnage {
 		return armure;
 	}
 
-	public Hero(int _vie, int _armure) {
+	public Hero(int _vie, int _armure, Case _caseHero) {
 		this.vie = _vie;
 		this.armure = _armure;
+		this.caseHero = _caseHero;
 
 	}
 
@@ -62,10 +65,19 @@ public class Hero implements Personnage {
 		
 	}
 	
+	public Case getCaseHero() {
+		return caseHero;
+	}
+
+	public void setCaseHero(Case caseHero) {
+		this.caseHero = caseHero;
+	}
+
 	public static interface HeroObserver{
 		public void le_hero_a_ete_deplace();
 	}; 
 	
+
 	
 
 }

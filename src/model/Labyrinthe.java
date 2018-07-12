@@ -17,6 +17,26 @@ public class Labyrinthe {
 		this.case_depart = _case_depart;
 		this.case_fin = _case_fin;
 	}
+	
+	public Case deplacementHaut(){
+		return case_depart;
+		
+	}
+	
+	public Case deplacementBas(){
+		return case_depart;
+		
+	}
+	
+	public Case deplacementDroite(){
+		return case_depart;
+		
+	}
+	
+	public Case deplacementGauche(){
+		return case_depart;
+		
+	}
 
 	public Case getCase_depart() {
 		return case_depart;
