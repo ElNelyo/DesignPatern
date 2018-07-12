@@ -32,7 +32,7 @@ public class main {
 		     	jeu.start();
 		     	jeu.generer_labyrinthe(tabCases, labyrinthe);
 		     	jeu.placer_joueur(labyrinthe);
-		     	System.out.println("Joueur crée avec "+joueur.getVie()+"pts de vie et "+joueur.getArmure()+"pts d'armure");
+		     	System.out.println("Joueur crï¿½e avec "+joueur.getVie()+"pts de vie et "+joueur.getArmure()+"pts d'armure");
 		     	
 		     	while (1==1){
 		     		jeu.deplacer();	
