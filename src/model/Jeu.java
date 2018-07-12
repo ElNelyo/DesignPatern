@@ -1,21 +1,86 @@
 package model;
 
+import java.awt.event.KeyEvent;
+import java.util.Scanner;
+
 public class Jeu {
+	private Niveau[] niveaux;
 
-public void start(){
-	
-}
+	public Jeu(Niveau[] niveaux) {
+		this.niveaux = niveaux;
+	}
 
-public void stop(){
-	
-}
+	public void start() {
 
-public void endLevel(){
-	
-}
+		// List de niveau ,
+		// Matrice du labyrinthe : case d'entrée de sortie
+		// Case recoit le niveau
 
-public void listNiveaux(){
-	
-}
-	
+	}
+
+	public void stop() {
+
+	}
+
+	public void endLevel() {
+
+	}
+
+	public void listNiveaux() {
+
+	}
+
+	public void deplacer() {
+		Scanner sc = new Scanner(System.in);
+		String str = sc.nextLine();
+		switch (str) {
+		case "z":
+			System.out.println("Deplacement vers le haut");
+			break;
+		case "q":
+			System.out.println("Deplacement vers la gauche");
+			break;
+		case "d":
+			System.out.println("Deplacement vers le droite");
+			break;
+		case "s":
+			System.out.println("Deplacement vers le bas");
+			break;
+
+		default:
+			System.out.println("Mauvaise touche (Z,Q,S,D)");
+			break;
+		}
+
+	}
+	public void placer_joueur(Labyrinthe labyrinthe, Personnage perso){
+		labyrinthe.getCase_depart().
+		
+		
+	}
+	public void generer_labyrinthe(Case[][] tabCases, Labyrinthe labyrinthe) {
+
+		int count = 1;
+		for (Case caselab[] : labyrinthe.getCasesLaby()) {
+			for (Case caserow : caselab) {
+				if (count < 9) {
+
+					if (caserow instanceof Case_Vide) {
+						System.out.print("[ ]");
+						count++;
+					} else {
+						System.out.print("[X]");
+						count++;
+					}
+
+				} else {
+					System.out.println("[X]");
+					count = 1;
+
+				}
+
+			}
+
+		}
+	}
 }
