@@ -1,15 +1,5 @@
 package model.impl;
 
-public class Case {
-	
-	public Case(){
+public interface Case {
 		
-	}
-	
-	
-	public void playerInteraction(){
-		
-		
-	}
-	
 }

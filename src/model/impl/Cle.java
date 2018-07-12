@@ -4,14 +4,8 @@ import model.AbstractObjet;
 
 public class Cle extends AbstractObjet{
 
-	public Cle(String name) {
-		super(name);
-		// TODO Auto-generated constructor stub
-	}
-
-	@Override
-	public String getName() {
-		return "Clé";
+	public Cle() {
+		super("Clé");
 	}
 
 	@Override
@@ -19,5 +13,19 @@ public class Cle extends AbstractObjet{
 		return false;
 	}
 
+	public boolean casePorte(Case caseActuelle) {
+		boolean cle = false;
+		
+		if(caseActuelle instanceof Case_Porte) {
+			cle = true;
+			System.out.println("La clé va dévérouiller la porte");
+		}
+		else {
+			cle = false;
+			System.out.println("Déplacement vers la case");
+		}
+		
+		return cle;
+	}
 
 }

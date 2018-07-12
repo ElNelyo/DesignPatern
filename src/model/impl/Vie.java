@@ -6,13 +6,8 @@ public class Vie extends AbstractObjet{
 
 	private int value;
 	
-	public Vie(String name) {
-		super(name);
-	}
-
-	@Override
-	public String getName() {
-		return "Vie";
+	public Vie() {
+		super("Vie");
 	}
 
 	@Override
@@ -23,11 +18,9 @@ public class Vie extends AbstractObjet{
 	private int getValue() {
 		return value;
 	}
-	
+
 	private void setValue(int value) {
 		this.value = value;
 	}
-
-	
 	
 }

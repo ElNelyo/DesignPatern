@@ -4,14 +4,9 @@ import model.AbstractObjet;
 
 public class Armure extends AbstractObjet{
 
-	public Armure(String name) {
-		super(name);
+	public Armure() {
+		super("Armure");
 		// TODO Auto-generated constructor stub
-	}
-
-	@Override
-	public String getName() {
-		return "Armure";
 	}
 
 	@Override

@@ -1,10 +1,19 @@
 package model;
 
-public abstract class Arme extends AbstractObjet{
+public abstract class Arme extends AbstractObjet {
 
-	public Arme(String name) {
-		super(name);
-		// TODO Auto-generated constructor stub
+	private int pointsDegats;
+	
+	public int getPointsDegats() {
+		return pointsDegats;
 	}
 
+	public Arme(String name, int pointsDegats) {
+		super(name);
+		this.pointsDegats = pointsDegats;
+	}
+	
+	public String attaqueArme() {
+		return "Attaque Arme : ";
+	}
 }
