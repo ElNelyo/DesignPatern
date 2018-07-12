@@ -30,12 +30,15 @@ public class Jeu {
 
 	}
 
-	public void deplacer() {
+	public void deplacer(Hero joueur) {
 		Scanner sc = new Scanner(System.in);
 		String str = sc.nextLine();
 		switch (str) {
 		case "z":
 			System.out.println("Deplacement vers le haut");
+			joueur.deplacer();
+			
+			
 			break;
 		case "q":
 			System.out.println("Deplacement vers la gauche");
@@ -54,7 +57,7 @@ public class Jeu {
 
 	}
 	public void placer_joueur(Labyrinthe labyrinthe, Personnage perso){
-		labyrinthe.getCase_depart().
+		labyrinthe.getCase_depart();
 		
 		
 	}
@@ -66,9 +69,16 @@ public class Jeu {
 				if (count < 9) {
 
 					if (caserow instanceof Case_Vide) {
-						System.out.print("[ ]");
-						count++;
-					} else {
+						if(caserow == labyrinthe.getCase_depart()) {
+							System.out.print("[O]");
+							count++;
+						} else {
+							System.out.print("[ ]");
+							count++;
+						}
+					}
+					
+					else {
 						System.out.print("[X]");
 						count++;
 					}
